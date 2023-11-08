@@ -4,7 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d6f4a03c-86c8-4aff-a150-285251f92a63" name="Changes" comment="changes" />
+    <list default="true" id="d6f4a03c-86c8-4aff-a150-285251f92a63" name="Changes" comment="changes">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/configfiles/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/testconfig/configfile/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/configfiles/locators.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/configfiles/locators.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/testdata/testdata.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/testconfig/testdata/testdata.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/base/DriverCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/DriverCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testcase/LoginPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcase/LoginPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/ReadPropertyFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/ReadPropertyFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/ReadXLSData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/ReadXLSData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/All Test Suite/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/All Test Suite/testng-failed.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/emailable-report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/testng-failed.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testrunner/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testrunner/testng.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,6 +35,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
@@ -36,10 +55,11 @@
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Yashavant.Naik/Downloads/admin-ui-master&quot;,
     &quot;onboarding.tips.debug.path&quot;: &quot;D:/Automation/Automation_Framework/src/main/java/org/example/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Global Libraries&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;testing.instrumented.configuration&quot;
@@ -47,61 +67,29 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\openg2p-testing\testconfig\configfile" />
+      <recent name="D:\openg2p-testing\testconfig" />
+      <recent name="D:\openg2p-testing\testconfig\testdata" />
       <recent name="D:\Automation\Automation_Framework\testrunner" />
       <recent name="D:\Automation\Automation_Framework\src\main\resources\configfiles" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.LoginPageTest.resetPassword">
-    <configuration name="D:/Automation/Automation_Framework/testrunner/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.D:/openg2p-testing/testrunner/testng.xml">
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="D:/openg2p-testing/testrunner/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Automation_Framework" />
-      <shortenClasspath name="NONE" />
-      <useClassPathOnly />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/testrunner/testng.xml" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="SUITE" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="PROPERTIES_FILE" value="" />
-      <properties />
-      <listeners>
-        <listener class="org.testng.reporters.EmailableReporter" />
-        <listener class="org.testng.reporters.FailedReporter" />
-      </listeners>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LoginPage" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Automation_Framework" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="base.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="base" />
-      <option name="MAIN_CLASS_NAME" value="base.LoginPage" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LoginPageTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Automation_Framework" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testcase.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="testcase" />
-      <option name="MAIN_CLASS_NAME" value="testcase.LoginPageTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -144,20 +132,56 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RegistryGroupPageTest.addGroupToProgram" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Automation_Framework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testcase.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testcase" />
+      <option name="MAIN_CLASS_NAME" value="testcase.RegistryGroupPageTest" />
+      <option name="METHOD_NAME" value="addGroupToProgram" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegistryIndividualPage.individualCreation" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Automation_Framework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testcase.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testcase" />
+      <option name="MAIN_CLASS_NAME" value="testcase.RegistryIndividualPage" />
+      <option name="METHOD_NAME" value="individualCreation" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="TestNG.LoginPage" />
-      <item itemvalue="TestNG.LoginPageTest.resetPassword" />
-      <item itemvalue="TestNG.D:/Automation/Automation_Framework/testrunner/testng.xml" />
-      <item itemvalue="TestNG.LoginPageTest" />
       <item itemvalue="TestNG.LoginPageTest.loginTest" />
+      <item itemvalue="TestNG.LoginPageTest.resetPassword" />
+      <item itemvalue="TestNG.RegistryGroupPageTest.addGroupToProgram" />
+      <item itemvalue="TestNG.RegistryIndividualPage.individualCreation" />
+      <item itemvalue="TestNG.D:/openg2p-testing/testrunner/testng.xml" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.D:/openg2p-testing/testrunner/testng.xml" />
         <item itemvalue="TestNG.LoginPageTest.resetPassword" />
-        <item itemvalue="TestNG.D:/Automation/Automation_Framework/testrunner/testng.xml" />
         <item itemvalue="TestNG.LoginPageTest.loginTest" />
-        <item itemvalue="TestNG.LoginPage" />
-        <item itemvalue="TestNG.LoginPageTest" />
+        <item itemvalue="TestNG.RegistryIndividualPage.individualCreation" />
+        <item itemvalue="TestNG.RegistryGroupPageTest.addGroupToProgram" />
       </list>
     </recent_temporary>
   </component>

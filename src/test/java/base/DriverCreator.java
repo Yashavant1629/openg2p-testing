@@ -1,19 +1,19 @@
 package base;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import listener.TestListeners;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.*;
+import utilities.TestLogger;
 
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.lang.reflect.Method;
 import java.util.Properties;
 
 public class DriverCreator {
@@ -23,11 +23,11 @@ public class DriverCreator {
     public static FileReader fileReader1;
     public static FileReader fileReader2;
 
-    @BeforeMethod
+  @BeforeMethod
     public void setUp() throws IOException {
 
         if (driver == null) {
-            fileReader1 = new FileReader(System.getProperty("user.dir")+"\\src\\main\\resources\\configfiles\\config.properties");
+            fileReader1 = new FileReader(System.getProperty("user.dir")+"\\testconfig\\configfile\\config.properties");
             fileReader2 = new FileReader(System.getProperty("user.dir")+"\\src\\main\\resources\\configfiles\\locators.properties");
             properties.load(fileReader1);
             locators.load(fileReader2);
@@ -52,6 +52,11 @@ public class DriverCreator {
         }
     }
 
+    @BeforeMethod
+    public void beforeMethod(Method m){
+        TestLogger.info("STARTING TEST: " + m.getName());
+        TestLogger.info("THREAD ID: " + Thread.currentThread().getId());
+    }
 
 
     @AfterMethod

@@ -5,10 +5,9 @@
     <classes>
       <class name="testcase.LoginPageTest">
         <methods>
-          <include name="resetPassword" invocation-numbers="0"/>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="loginTest" invocation-numbers="1 2"/>
+          <include name="loginTest" invocation-numbers="2"/>
         </methods>
       </class> <!-- testcase.LoginPageTest -->
     </classes>
