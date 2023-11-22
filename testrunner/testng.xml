@@ -8,7 +8,9 @@
         <classes>
             <class name= "testcase.LoginPageTest"/>
             <class name="testcase.RegistryGroupPageTest"/>
-            <class name="testcase.RegistryIndividualPage"/>
+            <class name="testcase.RegistryIndividualPageTest"/>
+            <class name="testcase.ProgramCreationTest"/>
+            <class name="testcase."></class>
         </classes>
     </test>
 </suite>

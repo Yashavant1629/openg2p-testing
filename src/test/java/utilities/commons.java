@@ -7,9 +7,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.List;
 
-import static base.DriverCreator.driver;
 import static base.DriverCreator.locators;
 import static java.lang.Thread.sleep;
 
@@ -86,7 +84,7 @@ public class commons {
 
             String att= driver.findElement(by).getAttribute("aria-owns");
             String[] list=att.split(" ");
-            click( driver,By.id(list[1]));
+            click( driver,By.id(list[0]));
             try {
                 sleep(500);
             } catch (InterruptedException e) {
@@ -117,16 +115,38 @@ public class commons {
         }
     }
 
-    public static void create(WebDriver driver, By by, By value) {
-        logger.info("Clicking Create Button " + by +value );
+    public static void create(WebDriver driver) {
+        logger.info("Clicking Create Button ");
         try {
-            (new WebDriverWait(driver, Duration.ofSeconds(10))).until(ExpectedConditions.elementToBeClickable(by));
-            sleep(500);
             click(driver,By.xpath(locators.getProperty("create_button")));
             sleep(500);
-        }catch (StaleElementReferenceException | InterruptedException sere) {
-            driver.findElement(by).click();
+        }catch (StaleElementReferenceException | InterruptedException e) {
+            e.printStackTrace();
         }
+    }
+
+    public static boolean isEntryPresent(WebDriver driver, String tableXpath, String expectedText) {
+        WebElement table = driver.findElement(By.xpath(tableXpath));
+        java.util.List<WebElement> rows = table.findElements(By.tagName("tr"));
+
+        boolean entryFound = false;
+
+        for (WebElement row : rows) {
+            java.util.List<WebElement> cells = row.findElements(By.tagName("td"));
+
+            for (WebElement cell : cells) {
+                if (cell.getText().contains(expectedText)) {
+                    entryFound = true;
+                    break;
+                }
+            }
+
+            if (entryFound) {
+                break;
+            }
+        }
+
+        return entryFound;
     }
 
 

@@ -81,5 +81,28 @@
             <artifactId>allure-testng</artifactId>
             <version>2.24.0</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/com.github.gv2011.logback/logback-classic -->
+        <dependency>
+            <groupId>com.github.gv2011.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.3.5</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/io.github.qsy7.java.dependencies/slf4j-api -->
+        <dependency>
+            <groupId>io.github.qsy7.java.dependencies</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>0.1.2</version>
+            <type>pom</type>
+        </dependency>
     </dependencies>
+
+    <!--    &lt;!&ndash; configuration> <parallel>methods<parallel> <threadCount>10</threadCount>-->
+<!--    </configuration&ndash;&gt;-->
+<!--    <configuration>-->
+<!--        <suiteXmlFiles>-->
+<!--            <suiteXmlFile>testng.xml</suiteXmlFile>-->
+<!--        </suiteXmlFiles>-->
+<!--    </configuration>-->
 </project>
