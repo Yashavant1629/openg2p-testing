@@ -9,6 +9,7 @@ import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import utilities.ReadXLSData;
+import utilities.commons;
 
 import java.util.concurrent.TimeUnit;
 
@@ -17,12 +18,11 @@ import java.util.concurrent.TimeUnit;
 public class LoginPageTest extends DriverCreator {
 
     @Test(priority = 1,dataProviderClass = ReadXLSData.class,dataProvider = "openg2pdata" )
-    public static void resetPassword(String email, String scenario) {
-        driver.findElement(By.linkText(locators.getProperty("reset_link"))).click();
-        driver.findElement(By.xpath(locators.getProperty("reset_email_field"))).sendKeys(email);
-        driver.findElement(By.xpath(locators.getProperty("confirm_email_button"))).click();
+    public static void resetPassword(String email, String scenario) throws InterruptedException {
+        commons.click(driver, By.linkText(locators.getProperty("reset_link")));
+        commons.enter(driver,By.xpath(locators.getProperty("reset_email_field")),email);
+        commons.click(driver,By.xpath(locators.getProperty("confirm_email_button")));
         if (scenario.equals("TRUE")) {
-//            driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
             String successMessage = driver.findElement(By.cssSelector(locators.getProperty("confirmation_message"))).getText();
             Assert.assertEquals(successMessage,"An email has been sent with credentials to reset your password");
         }
@@ -37,14 +37,14 @@ public class LoginPageTest extends DriverCreator {
     @Test(priority = 2,dataProviderClass = ReadXLSData.class,dataProvider = "openg2pdata")
     public static void loginTest(String username, String password, String scenario) throws InterruptedException {
         //Act
-        driver.findElement(By.id(locators.getProperty("username_field"))).sendKeys(username);
-        driver.findElement(By.id(locators.getProperty("password_field"))).sendKeys(password);
-        driver.findElement(By.xpath(locators.getProperty("login_button"))).click();
+        commons.enter(driver,By.id(locators.getProperty("username_field")),username);
+        commons.enter(driver,By.id(locators.getProperty("password_field")),password);
+        commons.click(driver,By.xpath(locators.getProperty("login_button")));
         Thread.sleep(2000);
         if(scenario.equals("TRUE")) {
             driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-            WebElement registry = driver.findElement(By.xpath(locators.getProperty("registry_name_field")));
-            Assert.assertTrue(registry.isDisplayed(),"BaseLogin Failed");
+            WebElement registry = driver.findElement(By.xpath(locators.getProperty("group_title")));
+            Assert.assertTrue(registry.isDisplayed());
         }
         else {
             driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);

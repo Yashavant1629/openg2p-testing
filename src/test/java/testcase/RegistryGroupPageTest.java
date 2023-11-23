@@ -20,7 +20,6 @@ import static utilities.commons.click;
 
 public class RegistryGroupPageTest extends BaseLogin {
     private static String groupId;
-    int optionIndex = 1;
 
 
     @Test(priority = 1,dataProviderClass = ReadXLSData.class,dataProvider = "openg2pdata")
@@ -31,15 +30,21 @@ public class RegistryGroupPageTest extends BaseLogin {
         WebElement groupsName = driver.findElement(By.xpath(locators.getProperty("group_creation_name_field")));
         groupId = groupsName.getAttribute(groupName);
         groupsName.sendKeys(groupName);
-//        driver.findElement(By.xpath(locators.getProperty("tags_dropdown"))).click();
-//        driver.findElement(By.xpath(locators.getProperty("contact_info_section"))).click();
-//        driver.findElement(By.xpath(locators.getProperty("group_address_fields"))).sendKeys(address);
-//        driver.findElement(By.xpath(locators.getProperty("add_line_group_phone_number"))).click();
-//        driver.findElement(By.xpath(locators.getProperty("add_line_group_phone_number"))).click();
-//        driver.findElement(By.xpath(locators.getProperty("group_phone_number"))).sendKeys(phoneNumber);
-//        driver.findElement(By.xpath(locators.getProperty("save_and_close_button"))).click();
+        commons.click(driver,By.xpath(locators.getProperty("tags_dropdown")));
+        commons.click(driver,By.xpath(locators.getProperty("contact_info_section")));
+        commons.enter(driver,By.xpath(locators.getProperty("group_address_fields")),address);
+//        commons.click(driver,By.xpath(locators.getProperty("add_line_group_phone_number")));
+//        commons.click(driver,By.xpath(locators.getProperty("add_line_group_phone_number")));
+//        commons.enter(driver,By.xpath(locators.getProperty("group_phone_number")),phoneNumber);
+//        commons.click(driver,By.xpath(locators.getProperty("save_and_close_button")));
         commons.enter(driver,By.xpath(locators.getProperty("group_email_field")),email);
         commons.click(driver,By.xpath(locators.getProperty("group_save_button")));
+        Thread.sleep(2000);
+        String expectedText = groupName;
+        String tableXPath = "//table[@class='o_list_table table table-sm table-hover table-striped o_list_table_ungrouped']";
+
+        boolean entryFound = commons.isEntryPresent(driver, tableXPath, expectedText);
+        Assert.assertTrue(entryFound, "Expected entry with text '" + expectedText + "' not found");
     }
 
     @Test(priority = 2)

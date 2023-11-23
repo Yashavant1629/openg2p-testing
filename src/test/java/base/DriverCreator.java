@@ -4,6 +4,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import listener.TestListeners;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.*;
@@ -33,6 +34,8 @@ public class DriverCreator {
             locators.load(fileReader2);
         }
         if (properties.getProperty("browser").equalsIgnoreCase("chrome")) {
+            ChromeOptions options = new ChromeOptions();
+            options.addArguments("--headless");
             WebDriverManager.chromedriver().setup();
             driver = new ChromeDriver();
             driver.get(properties.getProperty("testurl"));
