@@ -3,27 +3,22 @@ package utilities;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import java.time.Duration;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 import java.util.List;
-
-import static base.DriverCreator.locators;
 import static java.lang.Thread.sleep;
 
 public class commons {
 
     private static final org.slf4j.Logger logger= org.slf4j.LoggerFactory.getLogger(commons.class);
 
-    public static String getDateTime()
-    {
-
-
-        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyyMMddHHmm");
-        LocalDateTime now = LocalDateTime.now();
-        return dtf.format(now);
-    }
+//    public static String getDateTime()
+//    {
+//
+//
+//        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyyMMddHHmm");
+//        LocalDateTime now = LocalDateTime.now();
+//        return dtf.format(now);
+//    }
 
     public  static WebElement click(WebDriver driver, By by) throws InterruptedException {
         logger.info("Clicking " + by );
@@ -108,7 +103,6 @@ public class commons {
                 e.printStackTrace();
             }
         }catch(Exception e)
-
         {
             e.getMessage();
         }
@@ -129,15 +123,15 @@ public class commons {
         }
     }
 
-    public static void create(WebDriver driver) {
-        logger.info("Clicking Create Button ");
-        try {
-            click(driver,By.xpath(locators.getProperty("create_button")));
-            sleep(500);
-        }catch (StaleElementReferenceException | InterruptedException e) {
-            e.printStackTrace();
-        }
-    }
+//    public static void create(WebDriver driver) {
+//        logger.info("Clicking Create Button ");
+//        try {
+//            click(driver,By.xpath(locators.getProperty("create_button")));
+//            sleep(500);
+//        }catch (StaleElementReferenceException | InterruptedException e) {
+//            e.printStackTrace();
+//        }
+//    }
 
     public static boolean isEntryPresentInPaginatedTable(WebDriver driver, String tableXpath, String expectedText) {
         boolean entryFound = false;
