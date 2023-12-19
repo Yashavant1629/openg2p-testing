@@ -1,14 +1,11 @@
 package base;
 
-import listener.TestListeners;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.testng.annotations.*;
 
+import org.openqa.selenium.By;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.Properties;
-import java.util.concurrent.TimeUnit;
+
 
 public class BaseLogin extends DriverCreator{
 
@@ -30,13 +27,4 @@ public class BaseLogin extends DriverCreator{
         driver.findElement(By.xpath(locators.getProperty("login_button"))).click();
         Thread.sleep(5000);
     }
-
-//    @AfterTest
-//    public void logout() throws IOException {
-//        fileReader2 = new FileReader(System.getProperty("user.dir")+"\\src\\main\\resources\\configfiles\\locators.properties");
-//        locators.load(fileReader2);
-//        driver.findElement(By.xpath(locators.getProperty("logout_dropdown_menu"))).click();
-//        driver.findElement(By.xpath(locators.getProperty("logout_button"))).click();
-//    }
-
 }

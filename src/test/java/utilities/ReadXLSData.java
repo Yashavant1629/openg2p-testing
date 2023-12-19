@@ -20,24 +20,22 @@ public class ReadXLSData {
         properties.load(propertyFileInput);
         propertyFileInput.close();
 
-        // Get the value of 'testdatafilepath' property
-        String testDataFilePath = properties.getProperty("testdatafilepath");
 
-        // Construct the full file path for the Excel file
+        String testDataFilePath = properties.getProperty("testdatafilepath");
         File file = new File(testDataFilePath);
 
         FileInputStream fileinputstream = new FileInputStream(file);
         Workbook wb = WorkbookFactory.create(fileinputstream);
         Sheet sheetName = wb.getSheet(excelSheetName);
 
-    //Reading data from the cells and columns
+
         int totalRows = sheetName.getLastRowNum();
         System.out.println(totalRows);
         Row rowCells = sheetName.getRow(0);
         int totalCols = rowCells.getLastCellNum();
         System.out.println(totalCols);
 
-    // Data formatting
+
         DataFormatter format = new DataFormatter();
 
         String[][] testData = new String[totalRows][totalCols];
