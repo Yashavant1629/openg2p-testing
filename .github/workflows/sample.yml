@@ -30,7 +30,7 @@ jobs:
           sudo apt-get update
           sudo apt-get install google-chrome-stable -y
 
-      # Install ChromeDriver
+      # Get Chrome version and install ChromeDriver
       - name: Install ChromeDriver
         run: |
           CHROME_VERSION=$(google-chrome-stable --version | grep -oP '(?<=Google Chrome )[^ ]+')
