@@ -18,8 +18,8 @@ public class BaseLogin extends DriverCreator{
 
     public static void login() throws IOException, InterruptedException {
 
-        fileReader1 = new FileReader("testconfig\\configfile\\config.properties");
-        fileReader2 = new FileReader("src\\main\\resources\\configfiles\\locators.properties");
+        fileReader1 = new FileReader("testconfig/configfile/config.properties");
+        fileReader2 = new FileReader("src/main/resources/configfiles/locators.properties");
         properties.load(fileReader1);
         locators.load(fileReader2);
         Thread.sleep(2000);
