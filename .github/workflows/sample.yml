@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 name: sample workflow
+=======
+name: Java Maven Test with ChromeDriver
+>>>>>>> 9a5d705df19fb6187c75b8d94dc0e005c229dedc
 
 on:
   push:
@@ -22,12 +26,17 @@ jobs:
           distribution: 'temurin'
           cache: maven
 
+<<<<<<< HEAD
       # Install Chrome
+=======
+      # Install Google Chrome
+>>>>>>> 9a5d705df19fb6187c75b8d94dc0e005c229dedc
       - name: Install Google Chrome
         run: |
           wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
           sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
           sudo apt-get update
+<<<<<<< HEAD
           sudo apt-get install google-chrome-stable
 
       # Install ChromeDriver
@@ -37,6 +46,11 @@ jobs:
           wget -q -O /tmp/chromedriver.zip https://chromedriver.storage.googleapis.com/LATEST_RELEASE_${CHROME_VERSION%.*}/chromedriver_linux64.zip
           sudo unzip -o /tmp/chromedriver.zip chromedriver -d /usr/local/bin/
           sudo chmod +x /usr/local/bin/chromedriver
+=======
+          sudo apt-get install google-chrome-stable=114.0.5735.91 -y
+
+     
+>>>>>>> 9a5d705df19fb6187c75b8d94dc0e005c229dedc
 
       # Build with Maven and run tests
       - name: Build with Maven and run tests
