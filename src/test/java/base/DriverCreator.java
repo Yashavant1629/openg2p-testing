@@ -30,9 +30,9 @@ public class DriverCreator {
     public void setUp(Method m) throws IOException {
 
       if (driver == null) {
-          fileReader1 = new FileReader(System.getProperty("user.dir") + "\\testconfig\\configfile\\config.properties");
-          fileReader2 = new FileReader(System.getProperty("user.dir") + "\\src\\main\\resources\\configfiles\\locators.properties");
-          fileReader3 = new FileReader(System.getProperty("user.dir") + "\\testconfig\\configfile\\headless.properties");
+          fileReader1 = new FileReader(System.getProperty("openg2p-testing\\testconfig\\configfile\\config.properties");
+          fileReader2 = new FileReader(System.getProperty("openg2p-testing\\src\\main\\resources\\configfiles\\locators.properties");
+          fileReader3 = new FileReader(System.getProperty("openg2p-testing\\testconfig\\configfile\\headless.properties");
           properties.load(fileReader1);
           locators.load(fileReader2);
           headless.load(fileReader3);
