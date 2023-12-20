@@ -26,6 +26,9 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-maven-
 
+      - name: Copy config file
+        run: cp testconfig\configfile\config.properties /home/runner/work/openg2p-testing/openg2p-testing\testconfig\configfile\config.properties
+
       - name: Build with Maven
         run: mvn clean install -DskipTests=true
 
