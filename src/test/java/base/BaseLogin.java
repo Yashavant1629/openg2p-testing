@@ -17,8 +17,8 @@ public class BaseLogin extends DriverCreator{
     public static FileReader fileReader2;
 
     public static void login() throws IOException, InterruptedException {
-        fileReader1 = new FileReader("openg2p-testing\\testconfig\\configfile\\config.properties");
-        fileReader2 = new FileReader("openg2p-testing\\src\\main\\resources\\configfiles\\locators.properties");
+        fileReader1 = new FileReader("testconfig\\configfile\\config.properties");
+        fileReader2 = new FileReader("osrc\\main\\resources\\configfiles\\locators.properties");
         properties.load(fileReader1);
         locators.load(fileReader2);
         Thread.sleep(2000);
