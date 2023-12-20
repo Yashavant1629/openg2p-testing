@@ -33,12 +33,14 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-maven-
       - name: Copy config file
-        run: cp testconfig\configfile\config.properties /home/runner/work/openg2p-testing/openg2p-testing\testconfig\configfile\config.properties
+        run: cp testconfig/configfile/config.properties /home/runner/work/openg2p-testing/openg2p-testing/testconfig/configfile/config.properties
 
       - name: Copy locators file
-        run: cp src\main\resources\configfiles\locators.properties /home/runner/work/openg2p-testing/src\main\resources\configfiles\locators.properties
+        run: cp src/main/resources/configfiles/locators.properties /home/runner/work/openg2p-testing/src/main/resources/configfiles/locators.properties
 
-      
+      - name: Copy headless file
+        run: testconfig/configfile/headless.properties /home/runner/work/openg2p-testing/testconfig/configfile/headless.properties
+
       - name: Build with Maven
         run: mvn clean install -DskipTests=true
 
