@@ -32,6 +32,11 @@ jobs:
           key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
           restore-keys: |
             ${{ runner.os }}-maven-
+      - name: Copy config file
+        run: cp testconfig\configfile\config.properties /home/runner/work/openg2p-testing/openg2p-testing\testconfig\configfile\config.properties
+
+      - name: Copy locators file
+        run: cp src\main\resources\configfiles\locators.properties /home/runner/work/openg2p-testing/src\main\resources\configfiles\locators.properties
 
       
       - name: Build with Maven
