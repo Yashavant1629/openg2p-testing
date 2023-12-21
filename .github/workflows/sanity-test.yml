@@ -39,10 +39,17 @@ jobs:
           sudo cp scripts/openg2p-e2e.conf /etc/wireguard/
           sudo systemctl start wg-quick@openg2p-e2e.service
 
-      - name: Install Google Chrome # Using shell script to install Google Chrome
-        run:   |
-         chmod +x ./scripts/InstallChrome.sh
-                    ./scripts/InstallChrome.sh 
+      - name: Install Google Chrome
+        run: |
+          wget https://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_114-0-5735-90_amd64.deb
+          sudo apt install ./google-chrome-stable_97.0.4692.99-1_amd64.deb
+
+      - name: Install ChromeDriver
+        run: |
+          CHROMEDRIVER_VERSION="114.0.5735.90" # Replace with the compatible Chrome version
+          wget -N https://chromedriver.storage.googleapis.com/${CHROMEDRIVER_VERSION}/chromedriver_linux64.zip -P /tmp/
+          sudo unzip /tmp/chromedriver_linux64.zip -d /usr/local/bin/
+          sudo chmod +x /usr/local/bin/chromedriver
       
       - name: Build with Maven
         run: mvn clean install -DskipTests=true
