@@ -41,7 +41,7 @@ jobs:
 
       - name: Install Google Chrome
         run: |
-          wget https://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_114-0-5735-90_amd64.deb
+          wget https://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_120.0.6099.129_amd64.deb
           sudo apt install ./google-chrome-stable_97.0.4692.99-1_amd64.deb
 
       - name: Install ChromeDriver
