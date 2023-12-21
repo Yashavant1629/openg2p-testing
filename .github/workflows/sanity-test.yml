@@ -34,7 +34,6 @@ jobs:
             ${{ runner.os }}-maven-
       - name: Set up WireGuard # Setting up the Wiregaurd to access the openg2p url's
         run: |
-          sudo add-apt-repository -y ppa:wireguard/wireguard
           sudo apt-get update
           sudo apt-get install -y wireguard
           sudo cp scripts/openg2p-e2e.conf /etc/wireguard/
