@@ -43,7 +43,7 @@ public class LoginPageTest extends DriverCreator {
         Thread.sleep(2000);
         if(scenario.equals("TRUE")) {
             WebElement registry = driver.findElement(By.xpath(locators.getProperty("group_title")));
-            Assert.assertTrue(registry.isDisplayed());
+            Assert.assertTrue(registry.isEnabled());
         }
         else {
 //            driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
