@@ -1,4 +1,8 @@
 #!/bin/bash
 set -ex
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-sudo apt install ./google-chrome-stable_current_amd64.deb
+
+CHROME_VERSION="114.0.5735.90"
+
+
+wget https://dl.google.com/linux/direct/google-chrome-stable_${CHROME_VERSION}_amd64.deb
+sudo apt install ./google-chrome-stable_${CHROME_VERSION}_amd64.deb
