@@ -1,16 +1,16 @@
-2023-12-21 17:18:38,904 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+2023-12-22 09:27:33,807 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
   C:\Users\Yashavant.Naik\AppData\Local\JetBrains\IdeaIC2023.2\temp-testng-customsuite.xml
 
-2023-12-21 17:18:42,597 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 120.0.6099.109 (resolved driver for Chrome 120)
-2023-12-21 17:18:42,647 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Yashavant.Naik\.cache\selenium\chromedriver\win64\120.0.6099.109\chromedriver.exe
-2023-12-21 17:18:54,428 [main] INFO  utilities.TestLogger - STARTING TEST: loginTest
-2023-12-21 17:18:54,430 [main] INFO  utilities.TestLogger - THREAD ID: 1
-2023-12-21 17:18:54,522 [main] INFO  utilities.TestLogger - ***** Test Started: loginTest *****
-2023-12-21 17:18:54,554 [main] INFO  utilities.commons - Entering By.id: loginautouser@gmail.com
-2023-12-21 17:18:54,763 [main] INFO  utilities.commons - Entering By.id: passwordopeng2p@123
-2023-12-21 17:18:54,944 [main] INFO  utilities.commons - Clicking By.xpath: //button[@type='submit']
-2023-12-21 17:19:00,067 [main] INFO  utilities.TestLogger - ***** Test Successful: loginTest *****
-2023-12-21 17:19:00,100 [AsyncHttpClient-1-4] WARN  org.asynchttpclient.netty.handler.WebSocketHandler - onError
+2023-12-22 09:27:36,324 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 120.0.6099.109 (resolved driver for Chrome 120)
+2023-12-22 09:27:36,350 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Yashavant.Naik\.cache\selenium\chromedriver\win64\120.0.6099.109\chromedriver.exe
+2023-12-22 09:27:40,450 [main] INFO  utilities.TestLogger - STARTING TEST: loginTest
+2023-12-22 09:27:40,451 [main] INFO  utilities.TestLogger - THREAD ID: 1
+2023-12-22 09:27:40,517 [main] INFO  utilities.TestLogger - ***** Test Started: loginTest *****
+2023-12-22 09:27:40,541 [main] INFO  utilities.commons - Entering By.id: loginautouser@gmail.com
+2023-12-22 09:27:40,717 [main] INFO  utilities.commons - Entering By.id: passwordopeng2p@123
+2023-12-22 09:27:40,833 [main] INFO  utilities.commons - Clicking By.xpath: //button[@type='submit']
+2023-12-22 09:27:45,543 [main] INFO  utilities.TestLogger - ***** Test Successful: loginTest *****
+2023-12-22 09:27:45,569 [AsyncHttpClient-1-4] WARN  org.asynchttpclient.netty.handler.WebSocketHandler - onError
 java.net.SocketException: Connection reset
 	at sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394) ~[?:?]
 	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426) ~[?:?]
@@ -26,16 +26,16 @@ java.net.SocketException: Connection reset
 	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-common-4.1.92.Final.jar:4.1.92.Final]
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-common-4.1.92.Final.jar:4.1.92.Final]
 	at java.lang.Thread.run(Thread.java:833) [?:?]
-2023-12-21 17:19:00,143 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 120.0.6099.109 (resolved driver for Chrome 120)
-2023-12-21 17:19:00,157 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Yashavant.Naik\.cache\selenium\chromedriver\win64\120.0.6099.109\chromedriver.exe
-2023-12-21 17:19:03,006 [main] INFO  utilities.TestLogger - STARTING TEST: loginTest
-2023-12-21 17:19:03,006 [main] INFO  utilities.TestLogger - THREAD ID: 1
-2023-12-21 17:19:03,009 [main] INFO  utilities.TestLogger - ***** Test Started: loginTest *****
-2023-12-21 17:19:03,012 [main] INFO  utilities.commons - Entering By.id: loginyash@gmail.com
-2023-12-21 17:19:03,222 [main] INFO  utilities.commons - Entering By.id: passwordyash
-2023-12-21 17:19:03,393 [main] INFO  utilities.commons - Clicking By.xpath: //button[@type='submit']
-2023-12-21 17:19:06,760 [main] INFO  utilities.TestLogger - ***** Test Successful: loginTest *****
-2023-12-21 17:19:06,788 [AsyncHttpClient-1-7] WARN  org.asynchttpclient.netty.handler.WebSocketHandler - onError
+2023-12-22 09:27:45,614 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 120.0.6099.109 (resolved driver for Chrome 120)
+2023-12-22 09:27:45,626 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Yashavant.Naik\.cache\selenium\chromedriver\win64\120.0.6099.109\chromedriver.exe
+2023-12-22 09:27:47,698 [main] INFO  utilities.TestLogger - STARTING TEST: loginTest
+2023-12-22 09:27:47,699 [main] INFO  utilities.TestLogger - THREAD ID: 1
+2023-12-22 09:27:47,705 [main] INFO  utilities.TestLogger - ***** Test Started: loginTest *****
+2023-12-22 09:27:47,708 [main] INFO  utilities.commons - Entering By.id: loginyash@gmail.com
+2023-12-22 09:27:47,868 [main] INFO  utilities.commons - Entering By.id: passwordyash
+2023-12-22 09:27:48,014 [main] INFO  utilities.commons - Clicking By.xpath: //button[@type='submit']
+2023-12-22 09:27:51,298 [main] INFO  utilities.TestLogger - ***** Test Successful: loginTest *****
+2023-12-22 09:27:51,323 [AsyncHttpClient-1-7] WARN  org.asynchttpclient.netty.handler.WebSocketHandler - onError
 java.net.SocketException: Connection reset
 	at sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394) ~[?:?]
 	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426) ~[?:?]
