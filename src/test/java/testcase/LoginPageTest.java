@@ -42,7 +42,7 @@ public class LoginPageTest extends DriverCreator {
         commons.click(driver,By.xpath(locators.getProperty("login_button")));
         Thread.sleep(2000);
         if(scenario.equals("TRUE")) {
-            WebElement registry = driver.findElement(By.xpath(locators.getProperty("group_title")));
+            WebElement registry = driver.findElement(By.xpath(locators.getProperty("group_create_button")));
             Assert.assertNotNull(registry);
         }
         else {
