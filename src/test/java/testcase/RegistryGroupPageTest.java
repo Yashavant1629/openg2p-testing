@@ -35,7 +35,7 @@ public class RegistryGroupPageTest extends BaseLogin {
     public static void groupCreation(String groupName, String address, String phoneNumber, String email) throws IOException, InterruptedException {
         login();
         driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
-        commons.click(driver,By.cssSelector(locators.getProperty("group_create_button")));
+        commons.click(driver,By.xpath(locators.getProperty("group_create_button")));
         commons.enter(driver,By.xpath(locators.getProperty("group_creation_name_field")),groupName);
         commons.click(driver,By.xpath(locators.getProperty("tags_dropdown")));
         commons.click(driver,By.xpath(locators.getProperty("contact_info_section")));
