@@ -60,6 +60,9 @@ jobs:
       - name: Build with Maven
         run: mvn clean install -DskipTests=true
 
+      - name: Clear Allure report history
+        run: rm -rf allure-results/*
+
       - name: Run Sanity tests
         run: mvn clean test
 
@@ -92,5 +95,5 @@ jobs:
           authToken: ${{secrets.GITHUB_TOKEN}}
           context: 'Test report'
           state: 'success'
-          sha: ${{ github.event.pull_request.head.sha }}
+          sha: ${{ github.sha }}
           target_url: simple-elf.github.io/github-allure-history/${github.run_number}}
