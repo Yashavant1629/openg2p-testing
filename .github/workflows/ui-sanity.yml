@@ -91,4 +91,4 @@ jobs:
           context: 'Test report'
           state: 'success'
           sha: ${{ github.sha }}
-          target_url: Yashavant1629.github.io/openg2p-testing/${github.run_number}}
+          target_url: https://${{ github.Yashavant1629 }}.github.io/${{ github.openg2p-testing }}/${{ github.run_number }}
