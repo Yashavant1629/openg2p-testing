@@ -61,10 +61,6 @@ jobs:
       - name: Run Sanity tests
         run: mvn clean test
 
-      - name: Clear Allure report history
-        run: |
-          rm -rf allure-results/*
-
       - name: Allure setup
         uses: simple-elf/allure-report-action@master
         if: always()
@@ -91,4 +87,4 @@ jobs:
           context: 'Test report'
           state: 'success'
           sha: ${{ github.sha }}
-          target_url: https://${{ github.repository_owner }}.github.io/${{ github.repository }}/${{ github.run_number }}
+          target_url: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}//${{ github.run_number }}
