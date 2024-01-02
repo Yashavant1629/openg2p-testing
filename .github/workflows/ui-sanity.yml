@@ -96,4 +96,4 @@ jobs:
           context: 'Test report'
           state: 'success'
           sha: ${{ github.sha }}
-          target_url: https://${{ github.repository_owner }}.github.io/${{ github.repository }}/${{ github.run_number }}
+          target_url: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}//${{ github.run_number }}
