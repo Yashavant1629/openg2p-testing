@@ -1,16 +1,44 @@
-2023-12-22 09:27:33,807 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
-  C:\Users\Yashavant.Naik\AppData\Local\JetBrains\IdeaIC2023.2\temp-testng-customsuite.xml
-
-2023-12-22 09:27:36,324 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 120.0.6099.109 (resolved driver for Chrome 120)
-2023-12-22 09:27:36,350 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Yashavant.Naik\.cache\selenium\chromedriver\win64\120.0.6099.109\chromedriver.exe
-2023-12-22 09:27:40,450 [main] INFO  utilities.TestLogger - STARTING TEST: loginTest
-2023-12-22 09:27:40,451 [main] INFO  utilities.TestLogger - THREAD ID: 1
-2023-12-22 09:27:40,517 [main] INFO  utilities.TestLogger - ***** Test Started: loginTest *****
-2023-12-22 09:27:40,541 [main] INFO  utilities.commons - Entering By.id: loginautouser@gmail.com
-2023-12-22 09:27:40,717 [main] INFO  utilities.commons - Entering By.id: passwordopeng2p@123
-2023-12-22 09:27:40,833 [main] INFO  utilities.commons - Clicking By.xpath: //button[@type='submit']
-2023-12-22 09:27:45,543 [main] INFO  utilities.TestLogger - ***** Test Successful: loginTest *****
-2023-12-22 09:27:45,569 [AsyncHttpClient-1-4] WARN  org.asynchttpclient.netty.handler.WebSocketHandler - onError
+2024-01-02 17:22:15,459 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
+2024-01-02 17:22:15,467 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2024-01-02 17:22:15,472 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2024-01-02 17:22:15,473 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2024-01-02 17:22:15,473 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2024-01-02 17:22:15,474 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2024-01-02 17:22:15,474 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2024-01-02 17:22:15,474 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2024-01-02 17:22:15,475 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2024-01-02 17:22:15,475 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2024-01-02 17:22:15,476 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2024-01-02 17:22:15,476 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2024-01-02 17:22:15,477 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2024-01-02 17:22:15,477 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2024-01-02 17:22:15,477 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2024-01-02 17:22:15,478 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2024-01-02 17:22:15,486 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 2 ms.
+2024-01-02 17:22:15,497 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 11 ms.
+2024-01-02 17:22:15,498 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2024-01-02 17:22:15,499 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2024-01-02 17:22:15,501 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2024-01-02 17:22:15,501 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2024-01-02 17:22:15,502 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2024-01-02 17:22:15,502 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2024-01-02 17:22:15,503 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2024-01-02 17:22:15,506 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 3 ms.
+2024-01-02 17:22:15,507 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2024-01-02 17:22:15,507 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2024-01-02 17:22:15,507 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2024-01-02 17:22:15,508 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2024-01-02 17:22:15,539 [main] INFO  org.testng.internal.Utils - [Utils] DynamicGraphHelper.createDynamicGraph() took 6 ms.
+2024-01-02 17:22:18,663 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 120.0.6099.109 (resolved driver for Chrome 120)
+2024-01-02 17:22:18,701 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Yashavant.Naik\.cache\selenium\chromedriver\win64\120.0.6099.109\chromedriver.exe
+2024-01-02 17:22:25,643 [main] INFO  utilities.TestLogger - STARTING TEST: resetPassword
+2024-01-02 17:22:25,647 [main] INFO  utilities.TestLogger - THREAD ID: 1
+2024-01-02 17:22:25,782 [main] INFO  utilities.TestLogger - ***** Test Started: resetPassword *****
+2024-01-02 17:22:25,823 [main] INFO  utilities.commons - Clicking By.linkText: Reset Password
+2024-01-02 17:22:27,234 [main] INFO  utilities.commons - Entering By.xpath: //input[@id='login']autouser@gmail.com
+2024-01-02 17:22:27,443 [main] INFO  utilities.commons - Clicking By.xpath: //button[@type='submit']
+2024-01-02 17:22:28,960 [main] INFO  utilities.TestLogger - ***** Test Successful: resetPassword *****
+2024-01-02 17:22:28,995 [AsyncHttpClient-1-4] WARN  org.asynchttpclient.netty.handler.WebSocketHandler - onError
 java.net.SocketException: Connection reset
 	at sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394) ~[?:?]
 	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426) ~[?:?]
@@ -26,16 +54,16 @@ java.net.SocketException: Connection reset
 	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-common-4.1.92.Final.jar:4.1.92.Final]
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-common-4.1.92.Final.jar:4.1.92.Final]
 	at java.lang.Thread.run(Thread.java:833) [?:?]
-2023-12-22 09:27:45,614 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 120.0.6099.109 (resolved driver for Chrome 120)
-2023-12-22 09:27:45,626 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Yashavant.Naik\.cache\selenium\chromedriver\win64\120.0.6099.109\chromedriver.exe
-2023-12-22 09:27:47,698 [main] INFO  utilities.TestLogger - STARTING TEST: loginTest
-2023-12-22 09:27:47,699 [main] INFO  utilities.TestLogger - THREAD ID: 1
-2023-12-22 09:27:47,705 [main] INFO  utilities.TestLogger - ***** Test Started: loginTest *****
-2023-12-22 09:27:47,708 [main] INFO  utilities.commons - Entering By.id: loginyash@gmail.com
-2023-12-22 09:27:47,868 [main] INFO  utilities.commons - Entering By.id: passwordyash
-2023-12-22 09:27:48,014 [main] INFO  utilities.commons - Clicking By.xpath: //button[@type='submit']
-2023-12-22 09:27:51,298 [main] INFO  utilities.TestLogger - ***** Test Successful: loginTest *****
-2023-12-22 09:27:51,323 [AsyncHttpClient-1-7] WARN  org.asynchttpclient.netty.handler.WebSocketHandler - onError
+2024-01-02 17:22:29,048 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 120.0.6099.109 (resolved driver for Chrome 120)
+2024-01-02 17:22:29,062 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Yashavant.Naik\.cache\selenium\chromedriver\win64\120.0.6099.109\chromedriver.exe
+2024-01-02 17:22:31,374 [main] INFO  utilities.TestLogger - STARTING TEST: resetPassword
+2024-01-02 17:22:31,375 [main] INFO  utilities.TestLogger - THREAD ID: 1
+2024-01-02 17:22:31,382 [main] INFO  utilities.TestLogger - ***** Test Started: resetPassword *****
+2024-01-02 17:22:31,385 [main] INFO  utilities.commons - Clicking By.linkText: Reset Password
+2024-01-02 17:22:32,701 [main] INFO  utilities.commons - Entering By.xpath: //input[@id='login']yash678@gmail.com
+2024-01-02 17:22:32,918 [main] INFO  utilities.commons - Clicking By.xpath: //button[@type='submit']
+2024-01-02 17:22:34,381 [main] INFO  utilities.TestLogger - ***** Test Successful: resetPassword *****
+2024-01-02 17:22:34,407 [AsyncHttpClient-1-7] WARN  org.asynchttpclient.netty.handler.WebSocketHandler - onError
 java.net.SocketException: Connection reset
 	at sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394) ~[?:?]
 	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426) ~[?:?]
@@ -51,3 +79,60 @@ java.net.SocketException: Connection reset
 	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-common-4.1.92.Final.jar:4.1.92.Final]
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-common-4.1.92.Final.jar:4.1.92.Final]
 	at java.lang.Thread.run(Thread.java:833) [?:?]
+2024-01-02 17:22:34,593 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 120.0.6099.109 (resolved driver for Chrome 120)
+2024-01-02 17:22:34,605 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Yashavant.Naik\.cache\selenium\chromedriver\win64\120.0.6099.109\chromedriver.exe
+2024-01-02 17:22:37,182 [main] INFO  utilities.TestLogger - STARTING TEST: loginTest
+2024-01-02 17:22:37,183 [main] INFO  utilities.TestLogger - THREAD ID: 1
+2024-01-02 17:22:37,195 [main] INFO  utilities.TestLogger - ***** Test Started: loginTest *****
+2024-01-02 17:22:37,205 [main] INFO  utilities.commons - Entering By.id: loginautouser@gmail.com
+2024-01-02 17:22:37,430 [main] INFO  utilities.commons - Entering By.id: passwordopeng2p@123
+2024-01-02 17:22:37,592 [main] INFO  utilities.commons - Clicking By.xpath: //button[@type='submit']
+2024-01-02 17:22:41,205 [main] INFO  utilities.TestLogger - ***** Test Successful: loginTest *****
+2024-01-02 17:22:41,254 [AsyncHttpClient-1-10] WARN  org.asynchttpclient.netty.handler.WebSocketHandler - onError
+java.net.SocketException: Connection reset
+	at sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426) ~[?:?]
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:256) ~[netty-buffer-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132) ~[netty-buffer-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357) ~[netty-transport-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151) [netty-transport-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788) [netty-transport-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) [netty-transport-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) [netty-transport-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) [netty-transport-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) [netty-common-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-common-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-common-4.1.92.Final.jar:4.1.92.Final]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2024-01-02 17:22:41,291 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 120.0.6099.109 (resolved driver for Chrome 120)
+2024-01-02 17:22:41,305 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Yashavant.Naik\.cache\selenium\chromedriver\win64\120.0.6099.109\chromedriver.exe
+2024-01-02 17:22:43,761 [main] INFO  utilities.TestLogger - STARTING TEST: loginTest
+2024-01-02 17:22:43,761 [main] INFO  utilities.TestLogger - THREAD ID: 1
+2024-01-02 17:22:43,764 [main] INFO  utilities.TestLogger - ***** Test Started: loginTest *****
+2024-01-02 17:22:43,768 [main] INFO  utilities.commons - Entering By.id: loginyash@gmail.com
+2024-01-02 17:22:44,095 [main] INFO  utilities.commons - Entering By.id: passwordyash
+2024-01-02 17:22:44,428 [main] INFO  utilities.commons - Clicking By.xpath: //button[@type='submit']
+2024-01-02 17:22:45,867 [main] INFO  utilities.TestLogger - ***** Test Successful: loginTest *****
+2024-01-02 17:22:45,920 [AsyncHttpClient-1-13] WARN  org.asynchttpclient.netty.handler.WebSocketHandler - onError
+java.net.SocketException: Connection reset
+	at sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426) ~[?:?]
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:256) ~[netty-buffer-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132) ~[netty-buffer-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357) ~[netty-transport-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151) [netty-transport-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788) [netty-transport-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) [netty-transport-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) [netty-transport-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) [netty-transport-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) [netty-common-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-common-4.1.92.Final.jar:4.1.92.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-common-4.1.92.Final.jar:4.1.92.Final]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2024-01-02 17:22:45,978 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.internal.ExitCodeListener@29b8df5: 1 ms
+2024-01-02 17:22:46,031 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.SuiteHTMLReporter@67b8d45: 53 ms
+2024-01-02 17:22:46,092 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.jq.Main@16df9bde: 61 ms
+2024-01-02 17:22:46,092 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.FailedReporter@478530cb: 0 ms
+2024-01-02 17:22:46,104 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.XMLReporter@5560b64d: 12 ms
+2024-01-02 17:22:46,111 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.EmailableReporter2@123ca460: 6 ms
+2024-01-02 17:22:46,118 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@3c9f4376: 7 ms
