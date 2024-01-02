@@ -60,11 +60,11 @@ jobs:
       - name: Build with Maven
         run: mvn clean install -DskipTests=true
 
-      - name: Run Sanity tests
-        run: mvn clean test
-
       - name: Clear Allure report history
         run: rm -rf allure-results/*
+
+      - name: Run Sanity tests
+        run: mvn clean test
 
       - name: Generate Allure report
         run: mvn allure:report
