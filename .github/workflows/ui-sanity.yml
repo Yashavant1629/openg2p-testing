@@ -2,11 +2,6 @@ name: Test Workflow
 
 on:
   push:
-    branches:
-      - develop
-  pull_request:
-    branches:
-      - develop
   workflow_dispatch:
 
 jobs:
@@ -96,4 +91,4 @@ jobs:
           context: 'Test report'
           state: 'success'
           sha: ${{ github.sha }}
-          target_url: simple-elf.github.io/github-allure-history/${github.run_number}}
+          target_url: Yashavant1629.github.io/openg2p-testing/${github.run_number}}
