@@ -66,10 +66,6 @@ jobs:
       - name: Run Sanity tests
         run: mvn clean test
 
-      - name: Clear Allure report history
-        run: |
-          rm -rf allure-results/*
-
       - name: Allure setup
         uses: simple-elf/allure-report-action@master
         if: always()
