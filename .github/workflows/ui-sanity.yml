@@ -71,7 +71,7 @@ jobs:
 #        env:
 #            SLACK_WEBHOOK_URL: "https://hooks.slack.com/services/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"
         run: |
-          curl -X POST -H 'Content-type: application/json' --data '{"text":"Test failures detected in the workflow"}' https://hooks.slack.com/services/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
+          curl -X POST -H 'Content-type: application/json' --data '{"text":"Test failures detected in the workflow"}' https://hooks.slack.com/services/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
 #            WORKFLOW_NAME=$(echo "${{ github.workflow }}" | sed "s/'//g")
 #            REPOSITORY_NAME=$(echo "${{ github.repository }}" | sed "s/'//g")
 #            MESSAGE="Test failures detected in the workflow: '$WORKFLOW_NAME' of repository '$REPOSITORY_NAME'."
