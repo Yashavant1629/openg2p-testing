@@ -66,18 +66,16 @@ jobs:
       - name: Run Sanity tests
         run: mvn clean test
 
-      - name: Slack Notification Demo
+      - name: Notify Slack on Test Failures
         if: ${{ failure() }}
         env:
-          GITHUB_ACTOR: ${GITHUB_ACTOR}
-          GITHUB_ACTION: ${GITHUB_ACTION}
-          GITHUB_EVENT_NAME: ${GITHUB_EVENT_NAME}
-          GITHUB_REPOSITORY: ${GITHUB_REPOSITORY}
-          GITHUB_WORKFLOW: ${GITHUB_WORKFLOW}
-          SLACK_INCOMING_WEBHOOK: ${{ secrets.SLACK_INCOMING_WEBHOOK }}
+            SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
         run: |
-          curl -X POST -H 'Content-type: application/json' --data '{"text":"Test failures detected in the workflow: '${{ github.workflow }}' of repository '${{ github.repository }}'."}' $SLACK_WEBHOOK_URL
-          
+            WORKFLOW_NAME=$(echo "${{ github.workflow }}" | sed "s/'//g")
+            REPOSITORY_NAME=$(echo "${{ github.repository }}" | sed "s/'//g")
+            MESSAGE="Test failures detected in the workflow: '$WORKFLOW_NAME' of repository '$REPOSITORY_NAME'."
+            JSON="{\"text\":\"$MESSAGE\"}"
+            curl -X POST -H 'Content-type: application/json' --data "$JSON" "$SLACK_WEBHOOK_URL"
           
 
       - name: Allure setup
