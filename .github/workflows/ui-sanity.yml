@@ -68,14 +68,15 @@ jobs:
 
       - name: Notify Slack on Test Failures
         if: ${{ failure() }}
-        env:
-            SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+#        env:
+#            SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
         run: |
             WORKFLOW_NAME=$(echo "${{ github.workflow }}" | sed "s/'//g")
             REPOSITORY_NAME=$(echo "${{ github.repository }}" | sed "s/'//g")
             MESSAGE="Test failures detected in the workflow: '$WORKFLOW_NAME' of repository '$REPOSITORY_NAME'."
-            JSON="{\"text\":\"$MESSAGE\"}"
-            curl -X POST -H 'Content-type: application/json' --data "$JSON" "$SLACK_WEBHOOK_URL"
+            SLACK_WEBHOOK_URL="https://hooks.slack.com/services/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"
+            JSON_PAYLOAD="{\"text\":\"$MESSAGE\"}"
+            curl -X POST -H 'Content-type: application/json' --data "$JSON_PAYLOAD" "$SLACK_WEBHOOK_URL"
           
 
       - name: Allure setup
