@@ -68,10 +68,10 @@ jobs:
 
       - name: Notify Slack on Test Failures
         if: ${{ failure() }}
-        env:
-            SLACK_WEBHOOK_URL: "https://hooks.slack.com/services/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"
+#        env:
+#            SLACK_WEBHOOK_URL: "https://hooks.slack.com/services/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"
         run: |
-          curl -X POST -H 'Content-type: application/json' --data '{"text":"Test failures detected in the workflow"}' $SLACK_WEBHOOK_URL
+          curl -X POST -H 'Content-type: application/json' --data '{"text":"Test failures detected in the workflow"}' https://hooks.slack.com/services/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
 #            WORKFLOW_NAME=$(echo "${{ github.workflow }}" | sed "s/'//g")
 #            REPOSITORY_NAME=$(echo "${{ github.repository }}" | sed "s/'//g")
 #            MESSAGE="Test failures detected in the workflow: '$WORKFLOW_NAME' of repository '$REPOSITORY_NAME'."
