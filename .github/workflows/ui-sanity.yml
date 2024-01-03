@@ -61,6 +61,21 @@ jobs:
       - name: Run Sanity tests
         run: mvn clean test
 
+      - uses: actions/checkout@master
+      - name: Slack Notification Demo
+        uses: bryannice/gitactions-slack-notification@2.0.0
+        if: ${{ failure() }}
+        env:
+          GITHUB_ACTOR: ${GITHUB_ACTOR}
+          GITHUB_ACTION: ${GITHUB_ACTION}
+          GITHUB_EVENT_NAME: ${GITHUB_EVENT_NAME}
+          GITHUB_REPOSITORY: ${GITHUB_REPOSITORY}
+          GITHUB_WORKFLOW: ${GITHUB_WORKFLOW}
+          SLACK_INCOMING_WEBHOOK: ${{ secrets.SLACK_INCOMING_WEBHOOK }}
+        run: |
+          curl -X POST -H 'Content-type: application/json' --data '{"text":"Test failures detected in the workflow: '${{ github.workflow }}' of repository '${{ github.repository }}'."}' $SLACK_WEBHOOK_URL
+
+
       - name: Allure setup
         uses: simple-elf/allure-report-action@master
         if: always()
