@@ -71,7 +71,7 @@ jobs:
         env:
             SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
         run: |
-          curl -X POST -H 'Content-type: application/json' --data '{"text":"Hello, World!"}'
+          curl -X POST -H 'Content-type: application/json' --data '{"text":"Hello, World!"}' $SLACK_WEBHOOK_URL
 #            WORKFLOW_NAME=$(echo "${{ github.workflow }}" | sed "s/'//g")
 #            REPOSITORY_NAME=$(echo "${{ github.repository }}" | sed "s/'//g")
 #            MESSAGE="Test failures detected in the workflow: '$WORKFLOW_NAME' of repository '$REPOSITORY_NAME'."
