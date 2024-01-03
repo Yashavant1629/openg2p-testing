@@ -60,9 +60,6 @@ jobs:
       - name: Build with Maven
         run: mvn clean install -DskipTests=true
 
-      - name: Clear Allure report history
-        run: rm -rf allure-results/*
-
       - name: Run Sanity tests
         run: mvn clean test
 
@@ -78,33 +75,47 @@ jobs:
 #            SLACK_WEBHOOK_URL="https://hooks.slack.com/services/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"
 #            JSON_PAYLOAD="{\"text\":\"$MESSAGE\"}"
 #            curl -X POST -H 'Content-type: application/json' --data "$JSON_PAYLOAD" "$SLACK_WEBHOOK_URL"
-
-
-
-      - name: Allure setup
-        uses: simple-elf/allure-report-action@master
+      - name: Install Allure
+        run: |
+          sudo apt-add-repository -y ppa:qameta/allure
+          sudo apt-get update
+          sudo apt-get install -y allure
+      - name: Generate Allure Report
+        run: |
+          allure generate --clean
+      - name: Deploy to GitHub Pages
         if: always()
-        id: allure-report
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          allure_results: build/allure-results
-          gh_pages: gh-pages
-          allure_report: allure-report
-          allure_history: allure-results
+          github_token: ${{ secrets.GIT_TOKEN }}
+          publish_dir: allure-report
 
-      - name: Deploy report to Github Pages
-        if: always()
-        uses: peaceiris/actions-gh-pages@v2
-        env:
-          PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          PUBLISH_BRANCH: gh-pages
-          PUBLISH_DIR: allure-results
 
-      - name: Post the link to the report
-        if: always()
-        uses: Sibz/github-status-action@v1
-        with:
-          authToken: ${{secrets.GITHUB_TOKEN}}
-          context: 'Test report'
-          state: 'success'
-          sha: ${{ github.sha }}
-          target_url: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}//${{ github.run_number }}
+#      - name: Allure setup
+#        uses: simple-elf/allure-report-action@master
+#        if: always()
+#        id: allure-report
+#        with:
+#          allure_results: build/allure-results
+#          gh_pages: gh-pages
+#          allure_report: allure-report
+#          allure_history: allure-results
+#
+#      - name: Deploy report to Github Pages
+#        if: always()
+#        uses: peaceiris/actions-gh-pages@v2
+#        env:
+#          PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#          PUBLISH_BRANCH: gh-pages
+#          PUBLISH_DIR: allure-results
+#
+#      - name: Post the link to the report
+#        if: always()
+#        uses: Sibz/github-status-action@v1
+#        with:
+#          authToken: ${{secrets.GITHUB_TOKEN}}
+#          context: 'Test report'
+#          state: 'success'
+#          sha: ${{ github.sha }}
+#          target_url: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}//${{ github.run_number }}
+
