@@ -28,7 +28,7 @@ public class LoginPageTest extends DriverCreator {
         }
         else {
             String errorMessage = driver.findElement(By.cssSelector(locators.getProperty("reset_password_error_message"))).getText();
-            Assert.assertEquals(errorMessage, "Incorrect email1. Please enter the registered email address.");
+            Assert.assertEquals(errorMessage, "Incorrect email. Please enter the registered email address.");
 
         }
     }
