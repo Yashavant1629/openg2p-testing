@@ -79,7 +79,7 @@ jobs:
           SLACK_INCOMING_WEBHOOK: ${{ secrets.SLACK_INCOMING_WEBHOOK }}
         run: |
           curl -X POST -H 'Content-type: application/json' --data '{"text":"Test failures detected in the workflow: '${{ github.workflow }}' of repository '${{ github.repository }}'."}' $SLACK_WEBHOOK_URL
-
+          #added slack notification
       - name: Allure setup
         uses: simple-elf/allure-report-action@master
         if: always()
