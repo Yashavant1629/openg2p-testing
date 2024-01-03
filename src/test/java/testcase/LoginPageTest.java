@@ -21,7 +21,7 @@ public class LoginPageTest extends DriverCreator {
     public static void resetPassword(String email,String scenario) throws InterruptedException {
         commons.click(driver, By.linkText(locators.getProperty("reset_link")));
         commons.enter(driver,By.xpath(locators.getProperty("reset_email_field")),email);
-        commons.click(driver,By.xpath(locators.getProperty("confirm_email_button")));
+        commons.click(driver,By.path(locators.getProperty("confirm_email_button")));
         if (scenario.equals("TRUE")) {
             String successMessage = driver.findElement(By.cssSelector(locators.getProperty("confirmation_message"))).getText();
             Assert.assertEquals(successMessage,"An email has been sent with credentials to reset your password");
