@@ -68,12 +68,7 @@ jobs:
         if: ${{ failure() }}
         uses: slackapi/slack-github-action@v1.24.0
         with:
-          status: 'failure'
-          text: |
-            Workflow failed.
-            Actor: ${{ github.actor }}
-            Commit ID: ${{ github.sha }}
-            Failed Step: ${{ job.status.needs.sanity-tests.outputs.step }}
+          payload: '{"text": "*Workflow failed.*\\nActor: ${{ github.actor }}\\nCommit ID: ${{ github.sha }}\\nFailed Step: ${{ job.status.needs.sanity-tests.outputs.step }}"}'
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_INCOMING_WEBHOOK }}
 
@@ -82,11 +77,7 @@ jobs:
         if: ${{ success() }}
         uses: slackapi/slack-github-action@v1.24.0
         with:
-          status: 'Success'
-          text: |
-            Workflow run was successfull.
-            Actor: ${{ github.actor }}
-            Commit ID: ${{ github.sha }}
+          payload: '{"text": "*Workflow ran successfully.*\\nActor: ${{ github.actor }}\\nCommit ID: ${{ github.sha }}"}'
         env:
             SLACK_WEBHOOK_URL: ${{ secrets.SLACK_INCOMING_WEBHOOK }}
 
