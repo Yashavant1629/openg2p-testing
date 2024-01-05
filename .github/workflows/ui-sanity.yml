@@ -38,6 +38,7 @@ jobs:
           key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
           restore-keys: |
             ${{ runner.os }}-maven-
+
       - name: Set up WireGuard # Setting up the Wiregaurd to access the openg2p url's
         run: |
           sudo apt-get update
@@ -61,17 +62,7 @@ jobs:
         run: mvn clean install -DskipTests=true
 
       - name: Run Sanity tests
-        id: sanity-tests
         run: mvn clean test
-
-      - name: Slack Notification on failure
-        if: ${{ failure() }}
-        uses: slackapi/slack-github-action@v1.24.0
-        with:
-          payload: '{"text": "*Workflow failed.*\\nActor: ${{ github.actor }}\\nCommit ID: ${{ github.sha }}\\nFailed Step: ${{ job.status.needs.sanity-tests.outputs.step }}"}'
-        env:
-          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_INCOMING_WEBHOOK }}
-
 
       - name: Slack Notification on success
         if: ${{ success() }}
@@ -98,3 +89,18 @@ jobs:
           github_token: ${{ secrets.GIT_TOKEN }}
           publish_dir: allure-report
 
+      - name: Slack Notification on failure
+        if: ${{ failure() }}
+        uses: slackapi/slack-github-action@v1.24.0
+        with:
+          payload: '{"text": "*Workflow failed.*\nActor: ${{ github.actor }}\nCommit ID: ${{ github.sha }}\nFailed Step: ${{ github.event_name }}"}'
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_INCOMING_WEBHOOK }}
+
+      - name: Slack Notification on success
+        if: ${{ success() }}
+        uses: slackapi/slack-github-action@v1.24.0
+        with:
+          payload: '{"text": "*Workflow ran successfully.*\nActor: ${{ github.actor }}\nCommit ID: ${{ github.sha }}"}'
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_INCOMING_WEBHOOK }}
