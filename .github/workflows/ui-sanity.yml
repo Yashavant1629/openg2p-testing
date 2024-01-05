@@ -89,6 +89,8 @@ jobs:
           github_token: ${{ secrets.GIT_TOKEN }}
           publish_dir: allure-report
 
+#          Slack notifiers
+
       - name: Slack Notification on failure
         if: ${{ failure() }}
         uses: slackapi/slack-github-action@v1.24.0
