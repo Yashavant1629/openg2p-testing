@@ -66,7 +66,7 @@ jobs:
 
       - name: Slack Notification on failure
         if: ${{ failure() }}
-        uses: rtCamp/action-slack-notify@v3
+        uses: slackapi/slack-github-action@v1.24.0
         with:
           status: 'failure'
           text: |
