@@ -51,17 +51,19 @@ public class commons {
 
 
     public static void clearAndEnter(WebDriver driver, By by, String value) {
-            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-            WebElement element = wait.until(ExpectedConditions.elementToBeClickable(by));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+        WebElement element = wait.until(ExpectedConditions.elementToBeClickable(by));
 
-            try {
-                element.clear();
-                Thread.sleep(1000);
-                element.sendKeys(value);
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
+        try {
+            element.clear();
+            element.sendKeys(Keys.CONTROL + "a");
+            element.sendKeys(Keys.DELETE);
+            element.sendKeys(value);
+        } catch (Exception e) {
+            e.printStackTrace();
         }
+    }
+
 
     public static WebElement enter(WebDriver driver, By by, String value) {
         logger.info("Entering " + by +value);

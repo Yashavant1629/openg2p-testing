@@ -93,6 +93,7 @@ public class RegistryGroupPageTest extends BaseLogin {
         String tableXPath = "//table[@class='o_list_table table table-sm table-hover table-striped o_list_table_ungrouped']";
         Thread.sleep(2000);
         WebElement entryFound = commons.getEntryElement(driver, tableXPath, groupName);
+        assert entryFound != null;
         entryFound.click();
         commons.click(driver,By.xpath(locators.getProperty("action_button")));
         commons.click(driver,By.linkText(locators.getProperty("add_to_program_group")));

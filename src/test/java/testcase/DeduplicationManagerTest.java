@@ -46,8 +46,8 @@ public class DeduplicationManagerTest extends BaseLogin {
         commons.click(driver,By.xpath(locators.getProperty("remove_default_deduplication_manager")));
         Thread.sleep(1000);
         commons.click(driver,By.xpath(locators.getProperty("add_a_line_deduplication")));
-        commons.click(driver,By.xpath(locators.getProperty("create_dedup_window_button")));
-        commons.click(driver,By.xpath(locators.getProperty("dedup_manager_dropdown")));
+        commons.click(driver,By.xpath(locators.getProperty("create_window_button")));
+        commons.click(driver,By.xpath(locators.getProperty("manager_dropdown")));
         commons.click(driver,By.xpath(locators.getProperty("selecting_id_deduplication_manager")));
 //        By managerDropdown = By.xpath("");
 //        commons.dropDownByValue(driver,managerDropdown,"");

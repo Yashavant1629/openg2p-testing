@@ -4,7 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d6f4a03c-86c8-4aff-a150-285251f92a63" name="Changes" comment="changes" />
+    <list default="true" id="d6f4a03c-86c8-4aff-a150-285251f92a63" name="Changes" comment="changes">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/configfiles/locators.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/configfiles/locators.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/base/BaseLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/BaseLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/base/DriverCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/DriverCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testcase/DBTPaymentManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcase/G2PConnectPaymentManagerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testcase/DeduplicationManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcase/DeduplicationManagerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testcase/EligibilityManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcase/EligibilityManagerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testcase/GSMAMoneyPaymentManagerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testcase/GenderTypeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcase/GenderTypeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testcase/GroupMembershipKindTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcase/GroupMembershipKindTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testcase/GroupTypeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcase/GroupTypeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testcase/LoginPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcase/LoginPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testcase/ProgramCreationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcase/ProgramCreationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testcase/ProgramFundCreationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcase/ProgramFundCreationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testcase/RegistrantTagTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcase/RegistrantTagTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testcase/RegistryGroupPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcase/RegistryGroupPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testcase/RegistryIDTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcase/RegistryIDTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testcase/RelationshipsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcase/RelationshipsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testcase/VoucherConfigFileTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcase/VoucherConfigFileTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/commons.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/commons.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testLogger.log" beforeDir="false" afterPath="$PROJECT_DIR$/testLogger.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testconfig/configfile/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/testconfig/configfile/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testconfig/configfile/headless.properties" beforeDir="false" afterPath="$PROJECT_DIR$/testconfig/configfile/headless.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testconfig/testdata/testdata.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/testconfig/testdata/testdata.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testrunner/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testrunner/testng.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -72,7 +98,7 @@
       <recent name="D:\Automation\Automation_Framework\testrunner" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.LoginPageTest.loginTest">
+  <component name="RunManager" selected="TestNG.RegistryIndividualPageTest.individualCreation">
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
         <option name="Make" enabled="true" />
@@ -84,7 +110,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CashPaymentManagerTest.cashPaymentManagerCreation" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="RegistryIndividualPageTest.individualCreation" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Automation_Framework" />
       <extension name="coverage">
         <pattern>
@@ -93,8 +119,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="testcase" />
-      <option name="MAIN_CLASS_NAME" value="testcase.CashPaymentManagerTest" />
-      <option name="METHOD_NAME" value="cashPaymentManagerCreation" />
+      <option name="MAIN_CLASS_NAME" value="testcase.RegistryIndividualPageTest" />
+      <option name="METHOD_NAME" value="individualCreation" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -102,7 +128,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DBTPaymentManagerTest.dbtPaymentManagerCreation" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="SparTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Automation_Framework" />
       <extension name="coverage">
         <pattern>
@@ -111,8 +137,25 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="testcase" />
-      <option name="MAIN_CLASS_NAME" value="testcase.DBTPaymentManagerTest" />
-      <option name="METHOD_NAME" value="dbtPaymentManagerCreation" />
+      <option name="MAIN_CLASS_NAME" value="testcase.SparTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SparTest.bankAccount" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Automation_Framework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testcase.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testcase" />
+      <option name="MAIN_CLASS_NAME" value="testcase.SparTest" />
+      <option name="METHOD_NAME" value="bankAccount" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -120,7 +163,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GSMAMoneyPaymentManagerTest.gsmaMoneyPaymentManagerCreation" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="SparTest.mpesa" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Automation_Framework" />
       <extension name="coverage">
         <pattern>
@@ -129,8 +172,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="testcase" />
-      <option name="MAIN_CLASS_NAME" value="testcase.GSMAMoneyPaymentManagerTest" />
-      <option name="METHOD_NAME" value="gsmaMoneyPaymentManagerCreation" />
+      <option name="MAIN_CLASS_NAME" value="testcase.SparTest" />
+      <option name="METHOD_NAME" value="mpesa" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -138,7 +181,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginPageTest.loginTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="SparTest.wallet" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Automation_Framework" />
       <extension name="coverage">
         <pattern>
@@ -147,26 +190,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="testcase" />
-      <option name="MAIN_CLASS_NAME" value="testcase.LoginPageTest" />
-      <option name="METHOD_NAME" value="loginTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="VoucherConfigFileTest.voucherConfigFileCreation" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Automation_Framework" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testcase.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="testcase" />
-      <option name="MAIN_CLASS_NAME" value="testcase.VoucherConfigFileTest" />
-      <option name="METHOD_NAME" value="voucherConfigFileCreation" />
+      <option name="MAIN_CLASS_NAME" value="testcase.SparTest" />
+      <option name="METHOD_NAME" value="wallet" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -175,19 +200,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="TestNG.LoginPageTest.loginTest" />
-      <item itemvalue="TestNG.CashPaymentManagerTest.cashPaymentManagerCreation" />
-      <item itemvalue="TestNG.DBTPaymentManagerTest.dbtPaymentManagerCreation" />
-      <item itemvalue="TestNG.GSMAMoneyPaymentManagerTest.gsmaMoneyPaymentManagerCreation" />
-      <item itemvalue="TestNG.VoucherConfigFileTest.voucherConfigFileCreation" />
+      <item itemvalue="TestNG.RegistryIndividualPageTest.individualCreation" />
+      <item itemvalue="TestNG.SparTest.mpesa" />
+      <item itemvalue="TestNG.SparTest" />
+      <item itemvalue="TestNG.SparTest.bankAccount" />
+      <item itemvalue="TestNG.SparTest.wallet" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.LoginPageTest.loginTest" />
-        <item itemvalue="TestNG.VoucherConfigFileTest.voucherConfigFileCreation" />
-        <item itemvalue="TestNG.GSMAMoneyPaymentManagerTest.gsmaMoneyPaymentManagerCreation" />
-        <item itemvalue="TestNG.DBTPaymentManagerTest.dbtPaymentManagerCreation" />
-        <item itemvalue="TestNG.CashPaymentManagerTest.cashPaymentManagerCreation" />
+        <item itemvalue="TestNG.RegistryIndividualPageTest.individualCreation" />
+        <item itemvalue="TestNG.SparTest.mpesa" />
+        <item itemvalue="TestNG.SparTest" />
+        <item itemvalue="TestNG.SparTest.wallet" />
+        <item itemvalue="TestNG.SparTest.bankAccount" />
       </list>
     </recent_temporary>
   </component>

@@ -61,7 +61,7 @@ public class DriverCreator {
           driver = new EdgeDriver(options);
       }
 
-      driver.get(properties.getProperty("testurl"));
+      driver.get(properties.getProperty("openg2purl"));
       driver.manage().window().maximize();
 
       TestLogger.info("STARTING TEST: " + m.getName());

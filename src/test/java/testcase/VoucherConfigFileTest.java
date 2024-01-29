@@ -24,7 +24,7 @@ public class VoucherConfigFileTest extends BaseLogin {
         commons.click(driver,By.xpath(locators.getProperty("payment_file_config_create_button")));
         commons.enter(driver,By.xpath(locators.getProperty("payment_file_config_name")),configFileName);
         commons.enter(driver,By.xpath(locators.getProperty("voucher_template")),template);
-        driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
+        driver.manage().timeouts().pageLoadTimeout(15, TimeUnit.SECONDS);
         By qrCode = By.xpath("//ul[@class='nav nav-tabs']//li");
         commons.dropDownByValue(driver,qrCode,"QR Codes");
         commons.click(driver,By.xpath(locators.getProperty("qr_code_add_a_line")));

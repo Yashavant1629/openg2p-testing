@@ -11,6 +11,7 @@ import org.testng.annotations.Test;
 import utilities.ReadXLSData;
 import utilities.commons;
 
+import java.util.concurrent.TimeUnit;
 
 
 @Listeners(TestListeners.class)
@@ -36,21 +37,20 @@ public class LoginPageTest extends DriverCreator {
 
     @Test(priority = 2,dataProviderClass = ReadXLSData.class,dataProvider = "openg2pdata")
     public static void loginTest(String email, String password, String scenario) throws InterruptedException {
-        //Act
         commons.enter(driver,By.id(locators.getProperty("username_field")),email);
         commons.enter(driver,By.id(locators.getProperty("password_field")),password);
         commons.click(driver,By.xpath(locators.getProperty("login_button")));
-//        Thread.sleep(2000);
-//        if(scenario.equals("TRUE")) {
-//            WebElement registry = driver.findElement(By.xpath(locators.getProperty("group_create_button")));
-//            Assert.assertNotNull(registry);
-//        }
-//        else {
-////            driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-//            String errorMessage = driver.findElement(By.xpath(locators.getProperty("login_error_message"))).getText();
-//            Assert.assertEquals(errorMessage,"Login failed due to Invalid credentials !","Credentials are Invalid");
-//
-//        }
+        Thread.sleep(2000);
+        if(scenario.equals("TRUE")) {
+            WebElement registry = driver.findElement(By.xpath(locators.getProperty("group_create_button")));
+            Assert.assertNotNull(registry);
+        }
+        else {
+//            driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+            String errorMessage = driver.findElement(By.xpath(locators.getProperty("login_error_message"))).getText();
+            Assert.assertEquals(errorMessage,"Login failed due to Invalid credentials !","Credentials are Invalid");
+
+        }
 
     }
 

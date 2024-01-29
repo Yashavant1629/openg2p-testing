@@ -1,14 +1,18 @@
 package testcase;
 
 import base.BaseLogin;
+import listener.TestListeners;
 import org.openqa.selenium.By;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import utilities.ReadXLSData;
 import utilities.commons;
 
 import java.io.IOException;
 
+@Listeners(TestListeners.class)
+@Test
 public class GroupMembershipKindTest extends BaseLogin {
     @Test(dataProviderClass = ReadXLSData.class,dataProvider = "openg2pdata")
     public static void groupMembershipKindCreation(String kind) throws IOException, InterruptedException {

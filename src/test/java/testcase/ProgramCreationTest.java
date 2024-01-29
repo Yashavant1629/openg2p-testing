@@ -3,7 +3,6 @@ package testcase;
 import base.BaseLogin;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -15,7 +14,7 @@ import java.io.IOException;
 public class ProgramCreationTest extends BaseLogin {
 
     @Test(dataProviderClass = ReadXLSData.class,dataProvider = "openg2pdata")
-    public static void groupProgramCreation(String programName, String amountPerCycle) throws IOException, InterruptedException {
+    public static void groupProgramCreation(String programName) throws IOException, InterruptedException {
         login();
         commons.click(driver, By.xpath(locators.getProperty("menu_option")));
         commons.click(driver,By.xpath(locators.getProperty("programs")));
@@ -25,8 +24,9 @@ public class ProgramCreationTest extends BaseLogin {
         commons.click(driver,By.name(locators.getProperty("auto_approve_entitlement")));
         commons.dropdown(driver,By.xpath(locators.getProperty("cycle_approver_group")));
         commons.click(driver,By.xpath(locators.getProperty("configure_the_entitlement_manager")));
-        commons.clearAndEnter(driver,By.xpath(locators.getProperty("amount_per_cycle")),amountPerCycle);
+        commons.clearAndEnter(driver,By.xpath(locators.getProperty("amount_per_cycle")),"100");
         commons.dropdown(driver,By.xpath(locators.getProperty("entitlement_validation_group")));
+        commons.click(driver,By.name(locators.getProperty("program_creation_next_button")));
         commons.click(driver,By.name(locators.getProperty("program_create_button")));
         commons.click(driver,By.xpath(locators.getProperty("programs_list_view")));
         String tableXPath = "//table[@class='o_list_table table table-sm table-hover table-striped o_list_table_ungrouped']";
@@ -36,7 +36,7 @@ public class ProgramCreationTest extends BaseLogin {
     }
 
     @Test(dataProviderClass = ReadXLSData.class,dataProvider = "openg2pdata")
-    public static void individualProgramCreation(String programName,String amountPerCycle) throws IOException, InterruptedException {
+    public static void individualProgramCreation(String programName) throws IOException, InterruptedException {
         login();
         commons.click(driver, By.xpath(locators.getProperty("menu_option")));
         commons.click(driver,By.xpath(locators.getProperty("programs")));
@@ -51,8 +51,9 @@ public class ProgramCreationTest extends BaseLogin {
         commons.click(driver,By.name(locators.getProperty("auto_approve_entitlement")));
         commons.dropdown(driver,By.xpath(locators.getProperty("cycle_approver_group")));
         commons.click(driver,By.xpath(locators.getProperty("configure_the_entitlement_manager")));
-        commons.clearAndEnter(driver,By.xpath(locators.getProperty("amount_per_cycle")),amountPerCycle);
+        commons.clearAndEnter(driver,By.xpath(locators.getProperty("amount_per_cycle")),"100");
         commons.dropdown(driver,By.xpath(locators.getProperty("entitlement_validation_group")));
+        commons.click(driver,By.name(locators.getProperty("program_creation_next_button")));
         commons.click(driver,By.name(locators.getProperty("program_create_button")));
         commons.click(driver,By.xpath(locators.getProperty("programs_list_view")));
         String tableXPath = "//table[@class='o_list_table table table-sm table-hover table-striped o_list_table_ungrouped']";
