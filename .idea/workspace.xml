@@ -5,30 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d6f4a03c-86c8-4aff-a150-285251f92a63" name="Changes" comment="changes">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/configfiles/locators.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/configfiles/locators.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/base/BaseLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/BaseLogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/base/DriverCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/DriverCreator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testcase/DBTPaymentManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcase/G2PConnectPaymentManagerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testcase/DeduplicationManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcase/DeduplicationManagerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testcase/EligibilityManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcase/EligibilityManagerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testcase/GSMAMoneyPaymentManagerTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testcase/GenderTypeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcase/GenderTypeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testcase/GroupMembershipKindTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcase/GroupMembershipKindTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testcase/GroupTypeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcase/GroupTypeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testcase/LoginPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcase/LoginPageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testcase/ProgramCreationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcase/ProgramCreationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testcase/ProgramFundCreationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcase/ProgramFundCreationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testcase/RegistrantTagTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcase/RegistrantTagTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testcase/RegistryGroupPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcase/RegistryGroupPageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testcase/RegistryIDTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcase/RegistryIDTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testcase/RelationshipsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcase/RelationshipsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testcase/VoucherConfigFileTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcase/VoucherConfigFileTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/commons.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/commons.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testLogger.log" beforeDir="false" afterPath="$PROJECT_DIR$/testLogger.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testconfig/configfile/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/testconfig/configfile/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testconfig/configfile/headless.properties" beforeDir="false" afterPath="$PROJECT_DIR$/testconfig/configfile/headless.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testconfig/testdata/testdata.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/testconfig/testdata/testdata.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testrunner/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testrunner/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
