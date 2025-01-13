@@ -1,33 +1,9 @@
-2024-01-29 11:47:25,213 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+2024-07-11 12:48:26,483 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
   C:\Users\Yashavant.Naik\AppData\Local\JetBrains\IdeaIC2023.2\temp-testng-customsuite.xml
 
-2024-01-29 11:47:30,131 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 121.0.6167.85 (resolved driver for Chrome 121)
-2024-01-29 11:47:30,190 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Yashavant.Naik\.cache\selenium\chromedriver\win64\121.0.6167.85\chromedriver.exe
-2024-01-29 11:47:36,213 [main] INFO  utilities.TestLogger - STARTING TEST: individualCreation
-2024-01-29 11:47:36,215 [main] INFO  utilities.TestLogger - THREAD ID: 1
-2024-01-29 11:47:54,760 [main] INFO  utilities.commons - Clicking By.xpath: //a[@title='Individuals']
-2024-01-29 11:47:56,141 [main] INFO  utilities.commons - Clicking By.xpath: //button[@data-original-title='Create record']
-2024-01-29 11:47:57,513 [main] INFO  utilities.commons - Entering By.name: family_nameKamado
-2024-01-29 11:47:57,900 [main] INFO  utilities.commons - Entering By.name: given_nameNezuko
-2024-01-29 11:47:58,365 [main] INFO  utilities.commons - Entering By.name: addl_nameY
-2024-01-29 11:47:58,858 [main] INFO  utilities.commons - Entering By.xpath: //textarea[@class='o_field_text o_field_widget o_quick_editable o_input']Bangalore
-2024-01-29 11:47:59,261 [main] INFO  utilities.commons - Entering By.xpath: //input[@class='o_field_email o_field_widget o_quick_editable o_input']autotest@gmail.com
-2024-01-29 11:47:59,728 [main] INFO  utilities.commons - Entering By.xpath: //input[@class='o_datepicker_input o_input datetimepicker-input']02/17/2020
-2024-01-29 11:48:00,141 [main] INFO  utilities.commons - Clicking By.xpath: //button[@class='btn btn-primary o_form_button_save']
-2024-01-29 11:48:01,414 [main] INFO  utilities.commons - Clicking By.xpath: //a[@class='dropdown-item o_nav_entry' and @title='Individuals']
-2024-01-29 11:48:03,268 [AsyncHttpClient-1-4] WARN  org.asynchttpclient.netty.handler.WebSocketHandler - onError
-java.net.SocketException: Connection reset
-	at sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394) ~[?:?]
-	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426) ~[?:?]
-	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:256) ~[netty-buffer-4.1.92.Final.jar:4.1.92.Final]
-	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132) ~[netty-buffer-4.1.92.Final.jar:4.1.92.Final]
-	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357) ~[netty-transport-4.1.92.Final.jar:4.1.92.Final]
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151) [netty-transport-4.1.92.Final.jar:4.1.92.Final]
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788) [netty-transport-4.1.92.Final.jar:4.1.92.Final]
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) [netty-transport-4.1.92.Final.jar:4.1.92.Final]
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) [netty-transport-4.1.92.Final.jar:4.1.92.Final]
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) [netty-transport-4.1.92.Final.jar:4.1.92.Final]
-	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) [netty-common-4.1.92.Final.jar:4.1.92.Final]
-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-common-4.1.92.Final.jar:4.1.92.Final]
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-common-4.1.92.Final.jar:4.1.92.Final]
-	at java.lang.Thread.run(Thread.java:833) [?:?]
+2024-07-11 12:48:30,090 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 126.0.6478.126 (resolved driver for Chrome 126)
+2024-07-11 12:48:30,166 [main] INFO  io.github.bonigarcia.wdm.online.Downloader - Downloading https://storage.googleapis.com/chrome-for-testing-public/126.0.6478.126/win32/chromedriver-win32.zip
+2024-07-11 12:48:30,849 [main] INFO  io.github.bonigarcia.wdm.online.Downloader - Extracting driver from compressed file chromedriver-win32.zip
+2024-07-11 12:48:31,017 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Yashavant.Naik\.cache\selenium\chromedriver\win64\126.0.6478.126\chromedriver.exe
+2024-07-11 12:48:39,772 [main] INFO  utilities.TestLogger - ***** Test Started: resetPassword *****
+2024-07-11 12:48:39,797 [main] INFO  utilities.TestLogger - ***** Test Started: resetPassword *****

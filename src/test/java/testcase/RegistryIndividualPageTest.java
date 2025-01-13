@@ -12,13 +12,14 @@ import utilities.commons;
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
+import base.DriverCreator;
 
 public class RegistryIndividualPageTest extends BaseLogin {
 
 
     @Test(dataProviderClass = ReadXLSData.class,dataProvider = "openg2pdata")
     public static void individualCreation(String familyName, String firstName, String additionalName, String address, String email, String dateOfBirth) throws IOException, InterruptedException {
-    login();
+        login();
         Thread.sleep(2000);
         commons.click(driver,By.xpath(locators.getProperty("registry_individual")));
         commons.click(driver,By.xpath(locators.getProperty("individual_create_button")));
@@ -34,16 +35,32 @@ public class RegistryIndividualPageTest extends BaseLogin {
 //        commons.click(driver,By.xpath(locators.getProperty("gender_value")));
         commons.click(driver,By.xpath(locators.getProperty("save_individual")));
         commons.click(driver,By.xpath(locators.getProperty("individuals")));
-//        List<String> expectedTexts = Arrays.asList(familyName,firstName);
-//        String tableXPath = "//table[@class='o_list_table table table-sm table-hover table-striped o_list_table_ungrouped']";
-//
-//        boolean entryFound = commons.isEntryPresentInPaginatedTable(driver, tableXPath, expectedTexts.toString());
-//        Assert.assertTrue(entryFound, "Expected entry with text '" + expectedTexts + "' not found");
+        List<String> individualName = Arrays.asList(familyName,firstName+" "+additionalName);
+        String tableXPath = "//table[@class='o_list_table table table-sm table-hover table-striped o_list_table_ungrouped']";
+
+        boolean entryFound = commons.isEntryPresentInPaginatedTable(driver, tableXPath, individualName.toString());
+        System.out.println("Entry Found: " + entryFound);
+
+
+        Assert.assertTrue(entryFound, "Expected entry with text '" + individualName + "' not found");
 
 
     }
 
 
 
-
+    @Test
+    public static void addIndividualToProgram() throws IOException, InterruptedException {
+        login();
+        Thread.sleep(1000);
+        commons.click(driver,By.xpath(locators.getProperty("registry_individual")));
+        Thread.sleep(2000);
+        String tableXPath = "//table[@class='o_list_table table table-sm table-hover table-striped o_list_table_ungrouped']";
+        Thread.sleep(2000);
+        boolean entryFound = commons.isEntryPresentInPaginatedTable(driver, tableXPath, "KAMADO, NEZUKO Y ");
+        System.out.println(entryFound);
+        Assert.assertTrue(entryFound, "Expected entry with text '" + "KAMADO, NEZUKO Y " + "' not found");
+//        System.out.println(username);
+//
+    }
 }

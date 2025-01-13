@@ -23,7 +23,7 @@ public class ReadXLSData {
         File file = new File(testDataFilePath);
 
         FileInputStream fileinputstream = new FileInputStream(file);
-        Workbook wb = WorkbookFactory.create(fileinputstream);
+         Workbook wb = WorkbookFactory.create(fileinputstream);
         Sheet sheetName = wb.getSheet(excelSheetName);
 
 

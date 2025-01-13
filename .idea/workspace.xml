@@ -4,7 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d6f4a03c-86c8-4aff-a150-285251f92a63" name="Changes" comment="changes" />
+    <list default="true" id="d6f4a03c-86c8-4aff-a150-285251f92a63" name="Changes" comment="changes">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/configfiles/locators.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/configfiles/locators.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/base/BaseLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/BaseLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/base/DriverCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/DriverCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testcase/CashPaymentManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcase/CashPaymentManagerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testcase/LoginPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcase/LoginPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testcase/RegistryIndividualPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcase/RegistryIndividualPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/ReadXLSData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/ReadXLSData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testLogger.log" beforeDir="false" afterPath="$PROJECT_DIR$/testLogger.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testconfig/configfile/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/testconfig/configfile/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testconfig/testdata/testdata.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/testconfig/testdata/testdata.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testrunner/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testrunner/testng.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -60,7 +74,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.new.ui&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -72,7 +86,7 @@
       <recent name="D:\Automation\Automation_Framework\testrunner" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.RegistryIndividualPageTest.individualCreation">
+  <component name="RunManager" selected="TestNG.LoginPageTest.resetPassword">
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
         <option name="Make" enabled="true" />
@@ -84,7 +98,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RegistryIndividualPageTest.individualCreation" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="CashPaymentManagerTest.cashPaymentManagerCreation" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Automation_Framework" />
       <extension name="coverage">
         <pattern>
@@ -93,8 +107,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="testcase" />
-      <option name="MAIN_CLASS_NAME" value="testcase.RegistryIndividualPageTest" />
-      <option name="METHOD_NAME" value="individualCreation" />
+      <option name="MAIN_CLASS_NAME" value="testcase.CashPaymentManagerTest" />
+      <option name="METHOD_NAME" value="cashPaymentManagerCreation" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -102,24 +116,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SparTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="D:/openg2p-testing/testrunner/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Automation_Framework" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testcase.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="testcase" />
-      <option name="MAIN_CLASS_NAME" value="testcase.SparTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testrunner/testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SparTest.bankAccount" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginPageTest.resetPassword" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Automation_Framework" />
       <extension name="coverage">
         <pattern>
@@ -128,8 +135,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="testcase" />
-      <option name="MAIN_CLASS_NAME" value="testcase.SparTest" />
-      <option name="METHOD_NAME" value="bankAccount" />
+      <option name="MAIN_CLASS_NAME" value="testcase.LoginPageTest" />
+      <option name="METHOD_NAME" value="resetPassword" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -137,7 +144,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SparTest.mpesa" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="MTSConnectorTest.tokenizer" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Automation_Framework" />
       <extension name="coverage">
         <pattern>
@@ -146,8 +153,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="testcase" />
-      <option name="MAIN_CLASS_NAME" value="testcase.SparTest" />
-      <option name="METHOD_NAME" value="mpesa" />
+      <option name="MAIN_CLASS_NAME" value="testcase.MTSConnectorTest" />
+      <option name="METHOD_NAME" value="tokenizer" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -155,7 +162,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SparTest.wallet" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="RegistryIDTest.idTypeCreation" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Automation_Framework" />
       <extension name="coverage">
         <pattern>
@@ -164,8 +171,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="testcase" />
-      <option name="MAIN_CLASS_NAME" value="testcase.SparTest" />
-      <option name="METHOD_NAME" value="wallet" />
+      <option name="MAIN_CLASS_NAME" value="testcase.RegistryIDTest" />
+      <option name="METHOD_NAME" value="idTypeCreation" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -174,19 +181,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="TestNG.RegistryIndividualPageTest.individualCreation" />
-      <item itemvalue="TestNG.SparTest.mpesa" />
-      <item itemvalue="TestNG.SparTest" />
-      <item itemvalue="TestNG.SparTest.bankAccount" />
-      <item itemvalue="TestNG.SparTest.wallet" />
+      <item itemvalue="TestNG.MTSConnectorTest.tokenizer" />
+      <item itemvalue="TestNG.CashPaymentManagerTest.cashPaymentManagerCreation" />
+      <item itemvalue="TestNG.D:/openg2p-testing/testrunner/testng.xml" />
+      <item itemvalue="TestNG.LoginPageTest.resetPassword" />
+      <item itemvalue="TestNG.RegistryIDTest.idTypeCreation" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.RegistryIndividualPageTest.individualCreation" />
-        <item itemvalue="TestNG.SparTest.mpesa" />
-        <item itemvalue="TestNG.SparTest" />
-        <item itemvalue="TestNG.SparTest.wallet" />
-        <item itemvalue="TestNG.SparTest.bankAccount" />
+        <item itemvalue="TestNG.LoginPageTest.resetPassword" />
+        <item itemvalue="TestNG.MTSConnectorTest.tokenizer" />
+        <item itemvalue="TestNG.CashPaymentManagerTest.cashPaymentManagerCreation" />
+        <item itemvalue="TestNG.D:/openg2p-testing/testrunner/testng.xml" />
+        <item itemvalue="TestNG.RegistryIDTest.idTypeCreation" />
       </list>
     </recent_temporary>
   </component>

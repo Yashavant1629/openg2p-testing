@@ -13,7 +13,7 @@ import java.io.IOException;
 public class CashPaymentManagerTest extends BaseLogin {
 
     @Test(dataProviderClass = ReadXLSData.class,dataProvider = "openg2pdata")
-    public static void cashPaymentManagerCreation( String managerName,String programName) throws IOException, InterruptedException {
+    public static void cashPaymentManagerCreation( String managerName,String programName) throws Exception {
         login();
         commons.click(driver, By.xpath(locators.getProperty("menu_option")));
         commons.click(driver, By.xpath(locators.getProperty("programs")));
